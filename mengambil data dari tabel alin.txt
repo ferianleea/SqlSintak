@@ -1,0 +1,3 @@
+update tblshifbulan set tblshifbulan.[kode bagian]= tblkaryawan.[kode bagian]
+       from tblshifbulan inner join tblkaryawan
+	   on tblshifbulan.nik = tblkaryawan.nik

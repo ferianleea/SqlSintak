@@ -1,0 +1,4 @@
+Update tblKaryawan set tblkaryawan.[Kode Bagian]=Karyawanbee.BAGIAN
+from tblKaryawan inner join Karyawanbee
+on tblKaryawan.NIK=Karyawanbee.NIK
+where tblKaryawan.[Kode Dept]='O'

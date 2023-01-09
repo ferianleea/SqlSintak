@@ -1,0 +1,29 @@
+ 
+
+1.Rubah data pada Exceell, copy dan paste di notepad
+2.Pada Notepad
+
+  insert tbllbrsemen(nik,nama,jm_in,jm_out,sts,lbr1,lbr2,lbr3,lbr4) values ('M6','ABDUL KADIR','07:00','16:00','H','1.00','0.00','0.00','0.00')
+
+3. ccopy data dan paste pada sql
+   delete from tbllembur
+   insert tbllembur(nik,nama,jm_in,jm_out,sts,lbr1,lbr2,lbr3,lbr4) values ('M6','ABDUL KADIR','07:00','16:00','H','1.00','0.00','0.00','0.00')
+   insert tbllembur(nik,nama,jm_in,jm_out,sts,lbr1,lbr2,lbr3,lbr4) values ('K220310STF3941','ADE IMAS WIDODO','06:36','16:32','H','1.00','0.00','0.00','0.00')
+
+   Running ( Execute
+
+4 sesuaikan colum dengan tanggal yang mau di edit
+
+  update tblattendance set tblattendance.in22= tbllembur.jm_in,
+                         tblattendance.out22= tbllembur.jm_out,
+						 tblattendance.sts22= tbllembur.sts,
+						 tblattendance.lbr122= tbllembur.lbr1,
+						 tblattendance.Lbr222 = tbllembur.lbr2,
+						 tblattendance.lbr322= tbllembur.lbr3,
+						 tblattendance.lbr422= tbllembur.lbr4
+ 
+      from tblAttendance inner join tbllembur 
+	  on tblattendance.nik = tbllembur.nik 
+	  where tblattendance.tahun=2022 and tblAttendance.bulan=8
+
+  Running / Excute

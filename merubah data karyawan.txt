@@ -1,0 +1,15 @@
+
+INSERT INTO KARYAWANBEE(NIK,NAMA,Alamat,[Tempat lahir],[Tanggal lahir],[Jenis Identitas],[No Identitas],[Ibu Kandung]) VALUES
+					('K220125ENG2815','M  AQIL RISKON','Jl. Raya Durensawit RT 3 RW 2 Kesuben, Lebaksiu, Tegal','Tegal','1999-02-14','KTP','3328061402990007','Muinah')
+
+UPDATE tblKaryawan 
+SET TBLKARyawan.[NAMA]  = KARYAWANBEE.[NAMA], 
+    TBLKARyawan.[Alamat] = KARYAWANBEE.Alamat,
+	tblkaryawan.[Tempat lahir] = KARYAWANBEE.[Tempat lahir],
+	tblkaryawan.[Tgl. Lahir] = KARYAWANBEE.[Tanggal lahir],
+	tblkaryawan.[Jenis Identitas] = KARYAWANBEE.[Jenis Identitas],
+	tblkaryawan.[Nomor Identitas] = KARYAWANBEE.[No Identitas],
+	tblkaryawan.[Ibu Kandung] = KARYAWANBEE.[Ibu Kandung]
+
+FROM tblkaryawan inner join Karyawanbee
+	on tblKaryawan.NIK = Karyawanbee.NIK

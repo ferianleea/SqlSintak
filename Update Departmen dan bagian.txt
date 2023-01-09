@@ -1,0 +1,4 @@
+ update tblKaryawan set tblKaryawan.[Kode Dept]= Karyawanbee2.[Kode Dept],
+                        tblKaryawan.[Kode Bagian]= Karyawanbee2.[Kode Bagian]
+      from tblKaryawan inner join Karyawanbee2
+	  on tblKaryawan.nik = Karyawanbee2.nik 

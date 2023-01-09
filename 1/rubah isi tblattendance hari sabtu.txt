@@ -1,0 +1,146 @@
+
+-- kosongkan lembur dibawah jam 13.00
+
+update tblattendance 
+       set tblattendance.lbr102=0,
+	       tblattendance.lbr202=0,
+		   tblattendance.lbr302=0,
+		   tblattendance.lbr402=0 
+	   from tblAttendance 
+inner join tblkaryawan on tblattendance.nik = tblkaryawan.nik
+where tblAttendance.tahun='2022' and tblAttendance.bulan='07'   
+   and (left(tblattendance.out02,2) <= 13 and (right(tblattendance.out02,2) <= 20)   )   
+   and tblkaryawan.[kode posisi] <='G40'
+
+
+-- jam 13.20 - 13.40   Lembur 1= .5 jam
+update tblattendance 
+       set tblattendance.lbr102=0.5,
+	       tblattendance.lbr202=0,
+		   tblattendance.lbr302=0,
+		   tblattendance.lbr402=0 
+	   from tblAttendance 
+inner join tblkaryawan on tblattendance.nik = tblkaryawan.nik
+where tblAttendance.tahun='2022' and tblAttendance.bulan='07'   
+   and (left(tblattendance.out02,2)=13 and (right(tblattendance.out02,2) >= 20 and right(tblattendance.out02,2) <= 40   ))   
+   and tblkaryawan.[kode posisi] <='G40'
+   
+
+-- jam 13.41 - 14.10    Lembur 1 = 1 jam
+update tblattendance 
+       set tblattendance.lbr102=1,
+	       tblattendance.lbr202=0,
+		   tblattendance.lbr302=0,
+		   tblattendance.lbr402=0 
+	   from tblAttendance 
+inner join tblkaryawan on tblattendance.nik = tblkaryawan.nik
+where tblAttendance.tahun='2022' and tblAttendance.bulan='07'
+   and (left(tblattendance.out02,2)=13 and (right(tblattendance.out02,2) > 40 ))
+   or (left(tblattendance.out02,2)=14 and (right(tblattendance.out02,2) <= 10 ))
+   and tblkaryawan.[kode posisi] <='G40'
+  
+
+-- jam 14.11 - 14.40     Lembur 1 = 1 and lembur 2 = 1.5 jam
+update tblattendance 
+       set tblattendance.lbr102=1,
+	       tblattendance.lbr202=1.5 ,
+		   tblattendance.lbr302=0,
+		   tblattendance.lbr402=0 
+	   from tblAttendance 
+inner join tblkaryawan on tblattendance.nik = tblkaryawan.nik
+where tblAttendance.tahun='2022' and tblAttendance.bulan='07'
+   and (left(tblattendance.out02,2)=14 and (right(tblattendance.out02,2) > 10 and right(tblattendance.out02,2) <= 40   ))   
+   and tblkaryawan.[kode posisi] <='G40'
+   
+
+--jam 14.41 - 15.10    Lembur 1 = 1 and lembur 2 = 2 jam
+update tblattendance 
+       set tblattendance.lbr102=1,
+	       tblattendance.lbr202=2,
+		   tblattendance.lbr302=0,
+		   tblattendance.lbr402=0 
+	   from tblAttendance 
+inner join tblkaryawan on tblattendance.nik = tblkaryawan.nik
+where tblAttendance.tahun='2022' and tblAttendance.bulan='07'
+   and (left(tblattendance.out02,2)=14 and (right(tblattendance.out02,2) > 40 ))
+   or (left(tblattendance.out02,2)=15 and (right(tblattendance.out02,2) <= 10 ))
+   and tblkaryawan.[kode posisi] <='G40'
+   
+--jam 15.11 - 15.40      Lembur 1 = 1 and lembur 2 = 2.5 jam
+update tblattendance 
+       set tblattendance.lbr102=1,
+	       tblattendance.lbr202=2.5,
+		   tblattendance.lbr302=0,
+		   tblattendance.lbr402=0 
+	   from tblAttendance 
+inner join tblkaryawan on tblattendance.nik = tblkaryawan.nik
+where tblAttendance.tahun='2022' and tblAttendance.bulan='07'
+   and (left(tblattendance.out02,2)=15 and (right(tblattendance.out02,2) > 10 and right(tblattendance.out02,2) <= 40   )   
+   and tblkaryawan.[kode posisi] <='G40'
+
+   
+-- jam 15.41 - 16.10    Lembur 1 = 1 and lembur 2 = 3 jam
+update tblattendance 
+       set tblattendance.lbr102=1,
+	       tblattendance.lbr202=3,
+		   tblattendance.lbr302=0,
+		   tblattendance.lbr402=0 
+	   from tblAttendance 
+inner join tblkaryawan on tblattendance.nik = tblkaryawan.nik
+where tblAttendance.tahun='2022' and tblAttendance.bulan='07'
+   and (left(tblattendance.out02,2)=15 and (right(tblattendance.out02,2) > 40 ))
+   or (left(tblattendance.out02,2)=16 and (right(tblattendance.out02,2) <= 10 ))
+   and tblkaryawan.[kode posisi] <='G40'
+  
+-- jam 16.11 - 16.41    Lembur 1 = 1 and lembur 2 = 3.5 jam
+
+update tblattendance 
+       set tblattendance.lbr102=1,
+	       tblattendance.lbr202=3.5,
+		   tblattendance.lbr302=0,
+		   tblattendance.lbr402=0 
+	   from tblAttendance 
+inner join tblkaryawan on tblattendance.nik = tblkaryawan.nik
+where tblAttendance.tahun='2022' and tblAttendance.bulan='07'
+   and (left(tblattendance.out02,2)=16 and (right(tblattendance.out02,2) > 10 and right(tblattendance.out02,2) <= 40   )   
+   and tblkaryawan.[kode posisi] <='G40'
+
+  
+-- jam 16.41 - 17.10     -- jam 11.41 - 19.10    Lembur 1 = 1 and lembur 2 = 4 jam
+update tblattendance 
+       set tblattendance.lbr102=1,
+	       tblattendance.lbr202=4,
+		   tblattendance.lbr302=0,
+		   tblattendance.lbr402=0 
+	   from tblAttendance 
+inner join tblkaryawan on tblattendance.nik = tblkaryawan.nik
+where tblAttendance.tahun='2022' and tblAttendance.bulan='07'
+   and (left(tblattendance.out02,2)=16 and (right(tblattendance.out02,2) > 40 ))
+   or (left(tblattendance.out02,2)=17 and (right(tblattendance.out02,2) <= 10 ))
+   and tblkaryawan.[kode posisi] <='G40'
+      
+-- jam 17.11 - 17.41        -- jam 11.41 - 19.10    Lembur 1 = 1 and lembur 2 = 4.5 jam
+update tblattendance 
+       set tblattendance.lbr102=1,
+	       tblattendance.lbr202=4.5,
+		   tblattendance.lbr302=0,
+		   tblattendance.lbr402=0 
+	   from tblAttendance 
+inner join tblkaryawan on tblattendance.nik = tblkaryawan.nik
+where tblAttendance.tahun='2022' and tblAttendance.bulan='07'
+   and (left(tblattendance.out02,2)=17 and (right(tblattendance.out02,2) > 10 and right(tblattendance.out02,2) <= 40   )   
+   and tblkaryawan.[kode posisi] <='G40'
+
+-- jam 17.41 - 18.10     -- jam 11.41 - 19.10    Lembur 1 = 1 and lembur 2 = 5 jam
+update tblattendance 
+       set tblattendance.lbr102=1,
+	       tblattendance.lbr202=5,
+		   tblattendance.lbr302=0,
+		   tblattendance.lbr402=0 
+	   from tblAttendance 
+inner join tblkaryawan on tblattendance.nik = tblkaryawan.nik
+where tblAttendance.tahun='2022' and tblAttendance.bulan='07'
+   and (left(tblattendance.out02,2)=17 and (right(tblattendance.out02,2) > 40 ))
+   or (left(tblattendance.out02,2)=18 and (right(tblattendance.out02,2) <= 10 ))
+   and tblkaryawan.[kode posisi] <='G40'
+

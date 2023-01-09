@@ -1,0 +1,6 @@
+setting bila network error
+
+running commandcom dengan RUn administrator
+ketik : "netsh advfirewall set allprofiles state off"
+
+004601040998508
