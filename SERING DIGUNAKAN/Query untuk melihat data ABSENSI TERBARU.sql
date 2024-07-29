@@ -1,19 +1,25 @@
-select tblattendance.tahun,tblAttendance.Bulan,tblattendance.nik,tblkaryawan.nama,tbldept.[Kode Dept],tbldept.[Nama Departemen],tblbagian.[Kode Bagian],tblbagian.[Nama Bagian],
-	   --tblKaryawan.[Kode Posisi],TblJabatan.Jabatan, 
-       tblattendance.[in06],tblattendance.[out06],tblattendance.[sts06],--tblAttendance.Lbr129,tblAttendance.Lbr229,tblAttendance.Lbr329,tblAttendance.Lbr329,
-	   tblKaryawan.Resign,tblKaryawan.[Resign Date],tblKaryawan.[Tgl. Kerja Lama],tblKaryawan.Shift
-	   from tblattendance 
-			inner join tblkaryawan on tblattendance.nik=tblkaryawan.nik
-	        inner join tbldept on tbldept.[Kode Dept] =tblkaryawan.[Kode Dept]
-			inner join TblJabatan on TblJabatan.JabatanID = tblKaryawan.[Kode Posisi]
-			inner join tblbagian on (tblbagian.[Kode Dept] = tblkaryawan.[Kode Dept] and tblBagian.[Kode Bagian] =tblkaryawan.[Kode Bagian] )
+select TA.tahun,TA.Bulan,TA.nik,TK.nama,TD.[Kode Dept],TD.[Nama Departemen],TB.[Kode Bagian],TB.[Nama Bagian],
+	   TK.[Kode Posisi],TJ.Jabatan,
+       TA.[in16],TA.[out16],TA.[sts16],/*TA.Lbr129,TA.Lbr229,TA.Lbr329,TA.Lbr329,*/
+	   TK.Resign,TK.[Resign Date],TK.[Tgl. Kerja Lama],TK.Shift
+FROM tblattendance AS TA
+			inner join tblkaryawan AS TK ON TA.nik=TK.nik
+	        inner join tbldept AS TD ON TD.[Kode Dept] =TK.[Kode Dept]
+			inner join TblJabatan AS TJ  ON TJ.JabatanID = TK.[Kode Posisi]
+			inner join tblbagian AS TB ON (TB.[Kode Dept] = TK.[Kode Dept] and TB.[Kode Bagian] =TK.[Kode Bagian] )
 			
-	   where tblattendance.tahun=2023 and tblattendance.bulan=1 --AND tblkaryawan.[kode dept]='N' AND tblKaryawan.Resign = 'N'
-	   order by tblattendance.nik
+	   where TA.tahun=2023 and TA.bulan=5
+			 AND (TK.Resign = 'N' OR TK.[Resign Date] > '2023-05-12')
+             AND CONVERT(VARCHAR(10), TK.[Tgl. Kerja Lama], 120) <= '2023-05-12' /*AND tblkaryawan.[kode dept]='Q' AND tblKaryawan.Resign = 'N'*/
+	   order by TA.nik
 
-SELECT * FROM tblAttendance WHERE Tahun = 2022 AND Bulan = 12 ORDER BY NIK
+SELECT * FROM tblAttendance
+INNER JOIN tblKaryawan ON tblAttendance.NIK = tblKaryawan.NIK
+WHERE (tblKaryawan.Resign = 'N' OR tblKaryawan.[Resign Date] > '2023-05-16')
+		AND CONVERT(VARCHAR(10), tblKaryawan.[Tgl. Kerja Lama], 120) <= '2023-05-16'
 
-select nik,nama,[Tgl. Kerja],[Tgl. Kerja Baru],[Tgl. Kerja Lama] from tblKaryawan where nik like '%5696%'
+
+
 
 
 

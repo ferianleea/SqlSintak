@@ -1,0 +1,119 @@
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D001','2D/3D')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D002','ADM')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D003','ASSEMBLING')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D004','BOM')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D005','BOTTOM')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D006','COMMERCE')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D007','CRISPIN')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D008','CUTTING')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D009','DEVELOPER')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D010','DIMENSION')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D011','FILM')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D012','IE')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D013','MANAGER')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D014','MATERIAL')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D015','MEKANIK')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D016','MOLD')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D017','ORIMIL')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D018','PATTERN')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D019','PFC')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D020','PIMPINAN')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D021','PLANNING')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D022','PURCHASING')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D023','SEWING')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D024','SOP')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D025','SPEC')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D026','STANDAR')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D027','SWATCH')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D028','SWATCH BOOK')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D029','TOOLING')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('D','D030','TRIAL')
+
+update tblKaryawan set [kode bagian2] ='D001',kategori ='SUPPORT' where nik ='K230401DEV9293'
+update tblKaryawan set [kode bagian2] ='D001',kategori ='SUPPORT' where nik ='K230502DEV9391'
+update tblKaryawan set [kode bagian2] ='D001',kategori ='SUPPORT' where nik ='K230614DEV9799'
+update tblKaryawan set [kode bagian2] ='D002',kategori ='SUPPORT' where nik ='K220718DEV6014'
+update tblKaryawan set [kode bagian2] ='D003',kategori ='DIRECT' where nik ='K230201DEV8993'
+update tblKaryawan set [kode bagian2] ='D003',kategori ='DIRECT' where nik ='K230201DEV8994'
+update tblKaryawan set [kode bagian2] ='D003',kategori ='DIRECT' where nik ='K230202DEV8999'
+update tblKaryawan set [kode bagian2] ='D003',kategori ='DIRECT' where nik ='K230202DEV9000'
+update tblKaryawan set [kode bagian2] ='D003',kategori ='DIRECT' where nik ='K230206DEV9007'
+update tblKaryawan set [kode bagian2] ='D003',kategori ='DIRECT' where nik ='K211201DEV1136'
+update tblKaryawan set [kode bagian2] ='D003',kategori ='DIRECT' where nik ='K230403DEV9366'
+update tblKaryawan set [kode bagian2] ='D003',kategori ='DIRECT' where nik ='K230515DEV9679'
+update tblKaryawan set [kode bagian2] ='D004',kategori ='SUPPORT' where nik ='K230313DEV9157'
+update tblKaryawan set [kode bagian2] ='D004',kategori ='SUPPORT' where nik ='K221221DEV8776'
+update tblKaryawan set [kode bagian2] ='D004',kategori ='SUPPORT' where nik ='K230515DEV9675'
+update tblKaryawan set [kode bagian2] ='D005',kategori ='DIRECT' where nik ='K220905DEV7547'
+update tblKaryawan set [kode bagian2] ='D005',kategori ='DIRECT' where nik ='K230102DEV8787'
+update tblKaryawan set [kode bagian2] ='D005',kategori ='DIRECT' where nik ='K230213DEV9013'
+update tblKaryawan set [kode bagian2] ='D005',kategori ='DIRECT' where nik ='K230502DEV9389'
+update tblKaryawan set [kode bagian2] ='D006',kategori ='SUPPORT' where nik ='K211227DEV1880'
+update tblKaryawan set [kode bagian2] ='D006',kategori ='SUPPORT' where nik ='K230515DEV9676'
+update tblKaryawan set [kode bagian2] ='D007',kategori ='SUPPORT' where nik ='K230515DEV9682'
+update tblKaryawan set [kode bagian2] ='D008',kategori ='DIRECT' where nik ='K221201DEV8738'
+update tblKaryawan set [kode bagian2] ='D008',kategori ='DIRECT' where nik ='K230313DEV9160'
+update tblKaryawan set [kode bagian2] ='D009',kategori ='SUPPORT' where nik ='K211011DEV0041'
+update tblKaryawan set [kode bagian2] ='D009',kategori ='SUPPORT' where nik ='K221207DEV8755'
+update tblKaryawan set [kode bagian2] ='D009',kategori ='SUPPORT' where nik ='K230313DEV9159'
+update tblKaryawan set [kode bagian2] ='D009',kategori ='SUPPORT' where nik ='K230502DEV9390'
+update tblKaryawan set [kode bagian2] ='D010',kategori ='SUPPORT' where nik ='K220801DEV6661'
+update tblKaryawan set [kode bagian2] ='D010',kategori ='SUPPORT' where nik ='K230301DEV9074'
+update tblKaryawan set [kode bagian2] ='D010',kategori ='SUPPORT' where nik ='K230515DEV9677'
+update tblKaryawan set [kode bagian2] ='D011',kategori ='SUPPORT' where nik ='K231002DEV11487'
+update tblKaryawan set [kode bagian2] ='D011',kategori ='SUPPORT' where nik ='K230401DEV9294'
+update tblKaryawan set [kode bagian2] ='D012',kategori ='SUPPORT' where nik ='K220706DEV5699'
+update tblKaryawan set [kode bagian2] ='D012',kategori ='SUPPORT' where nik ='K220901DEV7247'
+update tblKaryawan set [kode bagian2] ='D012',kategori ='SUPPORT' where nik ='K230619DEV9841'
+update tblKaryawan set [kode bagian2] ='D012',kategori ='SUPPORT' where nik ='K231106DEV11773'
+update tblKaryawan set [kode bagian2] ='D013',kategori ='SUPPORT' where nik ='K211004DEV0021'
+update tblKaryawan set [kode bagian2] ='D014',kategori ='INDIRECT' where nik ='K220901DEV7339'
+update tblKaryawan set [kode bagian2] ='D014',kategori ='INDIRECT' where nik ='K230109DEV8802'
+update tblKaryawan set [kode bagian2] ='D014',kategori ='INDIRECT' where nik ='K230202DEV8998'
+update tblKaryawan set [kode bagian2] ='D015',kategori ='SUPPORT' where nik ='K221205DEV8744'
+update tblKaryawan set [kode bagian2] ='D015',kategori ='SUPPORT' where nik ='K230515DEV9678'
+update tblKaryawan set [kode bagian2] ='D016',kategori ='SUPPORT' where nik ='K230401DEV9292'
+update tblKaryawan set [kode bagian2] ='D016',kategori ='SUPPORT' where nik ='K230612DEV9792'
+update tblKaryawan set [kode bagian2] ='D017',kategori ='SUPPORT' where nik ='K220627DEV5452'
+update tblKaryawan set [kode bagian2] ='D017',kategori ='SUPPORT' where nik ='K221201DEV8734'
+update tblKaryawan set [kode bagian2] ='D018',kategori ='SUPPORT' where nik ='K221201DEV8732'
+update tblKaryawan set [kode bagian2] ='D019',kategori ='SUPPORT' where nik ='K220823DEV7203'
+update tblKaryawan set [kode bagian2] ='D019',kategori ='SUPPORT' where nik ='K230201DEV8989'
+update tblKaryawan set [kode bagian2] ='D020',kategori ='INDIRECT' where nik ='K220715DEV5968'
+update tblKaryawan set [kode bagian2] ='D021',kategori ='SUPPORT' where nik ='K211210OFF1556'
+update tblKaryawan set [kode bagian2] ='D021',kategori ='SUPPORT' where nik ='K230109DEV8801'
+update tblKaryawan set [kode bagian2] ='D022',kategori ='SUPPORT' where nik ='K211122DEV0967'
+update tblKaryawan set [kode bagian2] ='D022',kategori ='SUPPORT' where nik ='K221107DEV8692'
+update tblKaryawan set [kode bagian2] ='D022',kategori ='SUPPORT' where nik ='K230206DEV9005'
+update tblKaryawan set [kode bagian2] ='D022',kategori ='SUPPORT' where nik ='K230403DEV9363'
+update tblKaryawan set [kode bagian2] ='D022',kategori ='SUPPORT' where nik ='K230612DEV9790'
+update tblKaryawan set [kode bagian2] ='D023',kategori ='DIRECT' where nik ='K220715DEV5969'
+update tblKaryawan set [kode bagian2] ='D023',kategori ='DIRECT' where nik ='K230515DEV9680'
+update tblKaryawan set [kode bagian2] ='D023',kategori ='DIRECT' where nik ='K220725DEV6353'
+update tblKaryawan set [kode bagian2] ='D023',kategori ='DIRECT' where nik ='K220725DEV6356'
+update tblKaryawan set [kode bagian2] ='D023',kategori ='DIRECT' where nik ='K220725DEV6358'
+update tblKaryawan set [kode bagian2] ='D023',kategori ='DIRECT' where nik ='K220725SBL6340'
+update tblKaryawan set [kode bagian2] ='D023',kategori ='DIRECT' where nik ='K220727DEV6475'
+update tblKaryawan set [kode bagian2] ='D023',kategori ='DIRECT' where nik ='K220801DEV6534'
+update tblKaryawan set [kode bagian2] ='D023',kategori ='DIRECT' where nik ='K220801DEV6536'
+update tblKaryawan set [kode bagian2] ='D023',kategori ='DIRECT' where nik ='K220901DEV7337'
+update tblKaryawan set [kode bagian2] ='D023',kategori ='DIRECT' where nik ='K220901DEV7338'
+update tblKaryawan set [kode bagian2] ='D023',kategori ='DIRECT' where nik ='K220905DEV7548'
+update tblKaryawan set [kode bagian2] ='D023',kategori ='DIRECT' where nik ='K220905DEV7549'
+update tblKaryawan set [kode bagian2] ='D023',kategori ='DIRECT' where nik ='K220927DEV8533'
+update tblKaryawan set [kode bagian2] ='D024',kategori ='SUPPORT' where nik ='K211122DEV0966'
+update tblKaryawan set [kode bagian2] ='D024',kategori ='SUPPORT' where nik ='K230403DEV9365'
+update tblKaryawan set [kode bagian2] ='D025',kategori ='SUPPORT' where nik ='K230612DEV9791'
+update tblKaryawan set [kode bagian2] ='D025',kategori ='SUPPORT' where nik ='K230109DEV8803'
+update tblKaryawan set [kode bagian2] ='D025',kategori ='SUPPORT' where nik ='K230109DEV8804'
+update tblKaryawan set [kode bagian2] ='D026',kategori ='SUPPORT' where nik ='K230201DEV8990'
+update tblKaryawan set [kode bagian2] ='D026',kategori ='SUPPORT' where nik ='K230403DEV9364'
+update tblKaryawan set [kode bagian2] ='D026',kategori ='SUPPORT' where nik ='K230608DEV9779'
+update tblKaryawan set [kode bagian2] ='D027',kategori ='DIRECT' where nik ='K221212DEV8761'
+update tblKaryawan set [kode bagian2] ='D028',kategori ='DIRECT' where nik ='K221201DEV8733'
+update tblKaryawan set [kode bagian2] ='D029',kategori ='SUPPORT' where nik ='K211122DEV0968'
+update tblKaryawan set [kode bagian2] ='D029',kategori ='SUPPORT' where nik ='K211004DEV0023'
+update tblKaryawan set [kode bagian2] ='D030',kategori ='SUPPORT' where nik ='K230302DEV9100'
+update tblKaryawan set [kode bagian2] ='D030',kategori ='SUPPORT' where nik ='K230515DEV9570'
+update tblKaryawan set [kode bagian2] ='D030',kategori ='SUPPORT' where nik ='K230515DEV9681'
+

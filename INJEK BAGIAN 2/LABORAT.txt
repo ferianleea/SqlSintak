@@ -1,0 +1,67 @@
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('M','M01','ADM')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('M','M02','CEK IMPOR MATERIAL')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('M','M03','CEK TEMPERATURE')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('M','M04','CEK TEMPERATURE MESIN')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('M','M05','LEM ASS')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('M','M06','LEM STF')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('M','M07','MANAGER')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('M','M08','PEMERIKSAAN BONDING')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('M','M09','PEMERIKSAAN COMPOUND')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('M','M10','PEMERIKSAAN IMPOR MATERIAL')
+insert into tblBagian2 ([Kode Dept],[Kode Bagian2],[Nama Bagian2]) values ('M','M11','PIMPINAN')
+
+
+
+update tblKaryawan set [kode bagian2] = 'M01',kategori = 'SUPPORT' where nik = 'K220117LAB2389'
+update tblKaryawan set [kode bagian2] = 'M01',kategori = 'SUPPORT' where nik = 'K220117LAB2390'
+update tblKaryawan set [kode bagian2] = 'M01',kategori = 'SUPPORT' where nik = 'K220117LAB2391'
+update tblKaryawan set [kode bagian2] = 'M01',kategori = 'SUPPORT' where nik = 'K220621LAB5327'
+update tblKaryawan set [kode bagian2] = 'M01',kategori = 'SUPPORT' where nik = 'K220920LAB8235'
+update tblKaryawan set [kode bagian2] = 'M02',kategori = 'SUPPORT' where nik = 'K230904STF11037'
+update tblKaryawan set [kode bagian2] = 'M03',kategori = 'INDIRECT' where nik = 'K230626LAB9851'
+update tblKaryawan set [kode bagian2] = 'M04',kategori = 'INDIRECT' where nik = 'K211110STF0804'
+update tblKaryawan set [kode bagian2] = 'M04',kategori = 'INDIRECT' where nik = 'K220110SEW2157'
+update tblKaryawan set [kode bagian2] = 'M04',kategori = 'INDIRECT' where nik = 'K220110SEW2160'
+update tblKaryawan set [kode bagian2] = 'M04',kategori = 'INDIRECT' where nik = 'K220204LAB3043'
+update tblKaryawan set [kode bagian2] = 'M04',kategori = 'INDIRECT' where nik = 'K220905LAB7543'
+update tblKaryawan set [kode bagian2] = 'M04',kategori = 'INDIRECT' where nik = 'K220914OS7891'
+update tblKaryawan set [kode bagian2] = 'M04',kategori = 'INDIRECT' where nik = 'K220919OS8073'
+update tblKaryawan set [kode bagian2] = 'M04',kategori = 'INDIRECT' where nik = 'K230313LAB9162'
+update tblKaryawan set [kode bagian2] = 'M05',kategori = 'INDIRECT' where nik = 'K220124ASS2579'
+update tblKaryawan set [kode bagian2] = 'M05',kategori = 'INDIRECT' where nik = 'K220316LAB4055'
+update tblKaryawan set [kode bagian2] = 'M05',kategori = 'INDIRECT' where nik = 'K220711LAB5774'
+update tblKaryawan set [kode bagian2] = 'M05',kategori = 'INDIRECT' where nik = 'K220905LAB7546'
+update tblKaryawan set [kode bagian2] = 'M05',kategori = 'SUPPORT' where nik = 'K230321LAB9227'
+update tblKaryawan set [kode bagian2] = 'M05',kategori = 'INDIRECT' where nik = 'K230508LAB9479'
+update tblKaryawan set [kode bagian2] = 'M05',kategori = 'INDIRECT' where nik = 'K230508LAB9480'
+update tblKaryawan set [kode bagian2] = 'M05',kategori = 'INDIRECT' where nik = 'K230508LAB9481'
+update tblKaryawan set [kode bagian2] = 'M05',kategori = 'INDIRECT' where nik = 'K230627LAB9867'
+update tblKaryawan set [kode bagian2] = 'M05',kategori = 'INDIRECT' where nik = 'K230828LAB10879'
+update tblKaryawan set [kode bagian2] = 'M05',kategori = 'INDIRECT' where nik = 'K230918LAB11313'
+update tblKaryawan set [kode bagian2] = 'M06',kategori = 'INDIRECT' where nik = 'K211110STF0770'
+update tblKaryawan set [kode bagian2] = 'M06',kategori = 'INDIRECT' where nik = 'K220125STF2733'
+update tblKaryawan set [kode bagian2] = 'M06',kategori = 'INDIRECT' where nik = 'K220316LAB4056'
+update tblKaryawan set [kode bagian2] = 'M06',kategori = 'INDIRECT' where nik = 'K220609LAB5003'
+update tblKaryawan set [kode bagian2] = 'M06',kategori = 'INDIRECT' where nik = 'K220905LAB7545'
+update tblKaryawan set [kode bagian2] = 'M06',kategori = 'INDIRECT' where nik = 'K220912LAB7649'
+update tblKaryawan set [kode bagian2] = 'M06',kategori = 'INDIRECT' where nik = 'K220921LAB8310'
+update tblKaryawan set [kode bagian2] = 'M06',kategori = 'INDIRECT' where nik = 'K221017LAB8631'
+update tblKaryawan set [kode bagian2] = 'M06',kategori = 'INDIRECT' where nik = 'K230206LAB9002'
+update tblKaryawan set [kode bagian2] = 'M06',kategori = 'SUPPORT' where nik = 'K230321LAB9228'
+update tblKaryawan set [kode bagian2] = 'M06',kategori = 'INDIRECT' where nik = 'K230908IP11123'
+update tblKaryawan set [kode bagian2] = 'M07',kategori = 'SUPPORT' where nik = 'K211122LB0973'
+update tblKaryawan set [kode bagian2] = 'M07',kategori = 'SUPPORT' where nik = 'K230401LAB9291'
+update tblKaryawan set [kode bagian2] = 'M07',kategori = 'SUPPORT' where nik = 'K230710LAB10040'
+update tblKaryawan set [kode bagian2] = 'M08',kategori = 'SUPPORT' where nik = 'K220114LAB2280'
+update tblKaryawan set [kode bagian2] = 'M08',kategori = 'SUPPORT' where nik = 'K220114LAB2281'
+update tblKaryawan set [kode bagian2] = 'M08',kategori = 'SUPPORT' where nik = 'K220124STF2545'
+update tblKaryawan set [kode bagian2] = 'M08',kategori = 'SUPPORT' where nik = 'K220913LAB7867'
+update tblKaryawan set [kode bagian2] = 'M09',kategori = 'SUPPORT' where nik = 'K230328LAB9276'
+update tblKaryawan set [kode bagian2] = 'M10',kategori = 'SUPPORT' where nik = 'K220913LAB7865'
+update tblKaryawan set [kode bagian2] = 'M10',kategori = 'SUPPORT' where nik = 'K230313LAB9161'
+update tblKaryawan set [kode bagian2] = 'M11',kategori = 'INDIRECT' where nik = 'K211112STF0817'
+update tblKaryawan set [kode bagian2] = 'M11',kategori = 'INDIRECT' where nik = 'K211115STF0832'
+update tblKaryawan set [kode bagian2] = 'M11',kategori = 'SUPPORT' where nik = 'K220801LAB6663'
+update tblKaryawan set [kode bagian2] = 'M11',kategori = 'INDIRECT' where nik = 'K230301LAB9075'
+update tblKaryawan set [kode bagian2] = 'M11',kategori = 'INDIRECT' where nik = 'K230710LAB10041'
+update tblKaryawan set [kode bagian2] = 'M11',kategori = 'INDIRECT' where nik = 'K230710LAB10042'

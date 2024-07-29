@@ -2,9 +2,9 @@ select * from Tblshifbulan where nik like '%6361%' AND bulan = 12
 
 select shift from tblKaryawan where nik like '%3032%'
 
-update tblkaryawan set tblkaryawan.[shift]=Tblshifbulan.[09],tblkaryawan.[Status Shift]='N' from tblkaryawan         --merubah status shift
+update tblkaryawan set tblkaryawan.[shift]=Tblshifbulan.[16],tblkaryawan.[Status Shift]='N' from tblkaryawan         --merubah status shift
         inner join Tblshifbulan on tblkaryawan.nik=Tblshifbulan.nik 
-		where Tblshifbulan.tahun='2023' and Tblshifbulan.bulan='01' and Tblshifbulan.[09] > '0'
+		where Tblshifbulan.tahun='2023' and Tblshifbulan.bulan='05' and Tblshifbulan.[16] > '0'
 		
 UPDATE Tblshifbulan SET [kode dept] = 'S',[kode bagian] = '9000' where nik like '%6361%' AND bulan = 12
 
